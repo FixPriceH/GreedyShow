@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GreedyShow — Смотреть</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app single">
+    <main class="content">
+      <header class="topbar">
+        <button id="back" class="back-btn">← Назад</button>
+        <h1 id="watch-title">Смотрим рекламу</h1>
+      </header>
+
+      <section class="card player-card">
+        <div class="ad-area" id="ad-area">
+          <div class="ad-placeholder" id="ad-placeholder">🎬 Реклама будет здесь</div>
+          <div class="ad-timer" id="ad-timer">00:00</div>
+        </div>
+
+        <div class="status">
+          <div>Просмотрено: <strong id="viewed-count">0</strong> / <strong id="target-count">0</strong></div>
+          <div class="reward-line">Награда за пакет: <strong id="reward-amount">—</strong> TON</div>
+        </div>
+
+        <div class="controls">
+          <button id="play-ad" class="cta">Смотреть рекламу</button>
+          <button id="skip-ad" class="ghost" disabled>Пропустить (заглушка)</button>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="watch.js"></script>
+</body>
+</html>
